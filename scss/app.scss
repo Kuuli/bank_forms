@@ -1,0 +1,18 @@
+@import 'reset';
+@import 'variables';
+@import 'utilities';
+@import 'mixins';
+@import 'header';
+
+* {
+  box-sizing: border-box;
+}
+
+#container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px;
+}

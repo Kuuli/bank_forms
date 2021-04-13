@@ -1,0 +1,172 @@
+@import 'mixins';
+
+.container {
+  max-width: $maxWidth;
+  margin: 10px auto;
+}
+
+.primary__color--background {
+  padding: $bodyPadding;
+  background-color: $blue100;
+}
+
+.title {
+  color: $textColorWhite;
+  background-color: $blue400;
+  padding: 0.4rem;
+  width: 100%;
+  margin-top: -9px;
+  text-transform: uppercase;
+}
+
+.sub--title {
+  text-transform: uppercase;
+}
+
+.center {
+  text-align: center;
+}
+
+.font--small {
+  font-size: 13px;
+}
+
+.footer {
+  color: $textColorWhite;
+  background-color: $blue400;
+  padding: 0.4rem;
+  width: 100%;
+  margin-top: -9px;
+}
+
+// Flex-box
+.flex {
+  display: flex;
+}
+
+.flex--between {
+  @include flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex--column {
+  @include flex;
+  flex-direction: column;
+}
+
+.flex--center {
+  @include flex;
+  align-items: center;
+}
+
+.flex--around {
+  @include flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flex--evenly {
+  @include flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.input--box {
+  height: 30px;
+  width: 30px;
+  border: $borderColor;
+  padding: 0.2rem 0.4rem;
+}
+
+// Boxes
+.box {
+  display: block;
+  height: 30px;
+  width: 30px;
+  border: $borderColor;
+  border-left: none;
+  background: #fff;
+
+  &:first-child {
+    border: $borderColor;
+  }
+}
+
+input {
+  display: block;
+  outline: none;
+  border: none;
+  border: $borderColor;
+  height: 30px;
+  width: 100%;
+  border: $borderColor;
+  padding: 0.2rem 0.6rem;
+}
+
+// Margin & Padding
+.mt-1 {
+  margin-top: 0.5rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.ml-1 {
+  margin-left: 0.5rem;
+}
+
+.ml-2 {
+  margin-left: 0.8rem;
+}
+
+.mr-1 {
+  margin-right: 0.5rem;
+}
+
+.mr-2 {
+  margin-right: 1.5rem;
+}
+
+.mr-2 {
+  margin-right: 0.8rem;
+}
+
+.pr-2 {
+  padding-right: 2rem;
+}
+
+.pl-1 {
+  padding-left: 1rem;
+}
+
+// Width
+.wd-1 {
+  width: 100px;
+}
+
+.wd-3 {
+  width: 90px;
+  text-align: right;
+  margin-left: -0.4rem;
+}
+
+.wd-2 {
+  width: 140px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.spacer {
+  width: 150px;
+}
+.pd {
+  padding: 10rem;
+}
